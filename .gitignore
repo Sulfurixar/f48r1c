@@ -3,9 +3,14 @@
 **/*
 
 ## Files we actually want to track
-!mods/*
-!resource_packs/*
-!config/*
-!world/datapacks/*
+!mods
+!mods/**
+!resource_packs
+!resource_packs/**
+!config
+!config/**
+!world
+!world/datapacks/**
+!world/datapacks/**
 !.gitignore
 !test.txt
