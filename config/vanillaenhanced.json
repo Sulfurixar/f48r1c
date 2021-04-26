@@ -1,0 +1,14 @@
+{
+  "enableRubyGear": true,
+  "enableSapphireGear": true,
+  "enableAmethystGear": true,
+  "enableDarkGranite": true,
+  "enableMarble": true,
+  "enableRedwoodForest": true,
+  "enableDiverseForest": true,
+  "enableDesertMountain": true,
+  "enableExtremeMountain": true,
+  "enableExtremeJungle": true,
+  "enableFrozenDesert": true,
+  "enableHoneySlime": true
+}

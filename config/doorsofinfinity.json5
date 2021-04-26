@@ -1,0 +1,5 @@
+{ 
+	"requireDoorBorder": true,
+	"dimensionSize": 11,
+	"maxUpgrades": 8
+}
