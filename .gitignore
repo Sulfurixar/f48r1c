@@ -13,4 +13,5 @@
 !world/datapacks/**
 !world/datapacks/**
 !.gitignore
-!test.txt
+!plugins
+!plugins/**
