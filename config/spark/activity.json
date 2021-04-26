@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Elisiya",
+      "uniqueId": "7a5bae48-8137-40d4-8b94-dccf4048fdbf"
+    },
+    "time": 1619458381698,
+    "type": "Heap dump",
+    "data": {
+      "type": "file",
+      "value": "./config/spark/heap-2021-04-26_17.32.49.hprof"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Elisiya",
+      "uniqueId": "7a5bae48-8137-40d4-8b94-dccf4048fdbf"
+    },
+    "time": 1619458004409,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/XpaBrDmTmj"
+    }
+  }
+]
