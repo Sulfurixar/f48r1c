@@ -1,0 +1,10 @@
+## Ignore all files by default
+*
+**/*
+
+## Files we actually want to track
+!/mods/*
+!/resource_packs/*
+!/config/*
+!/world/datapacks/*
+!.gitignore
