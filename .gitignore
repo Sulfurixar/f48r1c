@@ -13,7 +13,5 @@
 !world/datapacks/**
 !world/datapacks/**
 !.gitignore
-!plugins
-!plugins/**
 !client_mods
 !client_mods/**
