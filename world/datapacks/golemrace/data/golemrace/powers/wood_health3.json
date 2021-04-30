@@ -1,0 +1,52 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1200,
+    "duration_per_stack": 1,
+    "effect": {
+        "effect": "minecraft:absorption",
+        "duration": 100,
+        "amplifier": 2,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+    },
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:status_effect",
+						"effect":"minecraft:absorption",
+						"min_amplifier": 1,
+						"min_duration": 1700
+					},
+					{
+						"type": "origins:status_effect",
+						"effect":"minecraft:absorption",
+						"min_amplifier": 2
+					}
+				]
+			},
+			{
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:fluid_height",
+						"fluid": "minecraft:water",
+						"comparison": ">",
+						"compare_to": 0
+					},
+					{
+						"type": "origins:sneaking"
+					}
+				]
+			}
+		]
+	},
+	"name": "Fibric Saturation",
+	"description": "",
+	"hidden": true
+}

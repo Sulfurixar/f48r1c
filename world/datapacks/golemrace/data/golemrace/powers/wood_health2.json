@@ -1,0 +1,52 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1800,
+    "duration_per_stack": 1,
+    "effect": {
+        "effect": "minecraft:absorption",
+        "duration": 100,
+        "amplifier": 1,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+    },
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:status_effect",
+						"effect":"minecraft:absorption",
+						"min_amplifier": 0,
+						"min_duration": 2300
+					},
+					{
+						"type": "origins:status_effect",
+						"effect":"minecraft:absorption",
+						"min_amplifier": 1
+					}
+				]
+			},
+			{
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:fluid_height",
+						"fluid": "minecraft:water",
+						"comparison": ">",
+						"compare_to": 0
+					},
+					{
+						"type": "origins:sneaking"
+					}
+				]
+			}
+		]
+	},
+	"name": "Bark Expansion",
+	"description": "",
+	"hidden": true
+}

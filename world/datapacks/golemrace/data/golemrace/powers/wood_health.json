@@ -1,0 +1,30 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -119,
+    "max_stacks": 2400,
+    "duration_per_stack": 1,
+    "effect": {
+        "effect": "minecraft:absorption",
+        "duration": 100,
+        "amplifier": 0,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+    },
+    "condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:sneaking"
+			}
+		]
+    },
+	"name": "Saturated Roots",
+	"description": "Staying in water makes your body more dense and as expected increases your liveliness. But, as you might expect, your body doesn't get saturated quickly and needs extensive amounts of time to fully fill with water. So you might want to stay in water for a long time."
+}

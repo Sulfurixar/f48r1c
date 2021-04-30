@@ -1,0 +1,13 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:exhaust",
+        "amount": 0.8
+    },
+    "condition": {
+        "type": "origins:on_fire"
+    },
+    "interval": 10,
+    "name": "Weakness to fire.",
+    "description": "You can handle some fire as long as you are still filled with water. But being in fire reduces your water into steam quickly and begins to hurt you as normal eventually."
+}

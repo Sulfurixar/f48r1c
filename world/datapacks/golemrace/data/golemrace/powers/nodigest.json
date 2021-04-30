@@ -1,0 +1,11 @@
+{
+    "type": "origins:prevent_item_use",
+    "loading_priority": 3,
+    "hidden": false,
+    "name": "No digestive tract.",
+    "description": "You can't eat food.",
+    "item_condition": {
+        "type": "origins:food",
+        "inverted": false
+    }
+}

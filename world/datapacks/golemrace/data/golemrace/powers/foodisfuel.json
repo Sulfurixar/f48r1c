@@ -1,0 +1,19 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:food_level",
+			"comparison": "==",
+			"compare_to": 0
+		},
+		"if_action": {
+			"type": "origins:execute_command",
+			"command": "/kill",
+			"permission_level": 4
+		}
+	},
+	"interval": 1,
+	"name": "Fuel Dependent",
+	"description": "You cannot function without fuel. If your food reaches 0, you die."
+}

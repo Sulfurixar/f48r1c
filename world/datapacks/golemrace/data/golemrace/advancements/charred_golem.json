@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Charred!",
+            "color": "dark_purple",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "You have burnt your soul and become a Charred Golem",
+            "color": "gold",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:coal_block"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "charredgolem": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "golemrace:wood_golem"
+}

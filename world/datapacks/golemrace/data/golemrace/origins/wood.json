@@ -1,0 +1,29 @@
+{
+    "powers": [
+        "golemrace:wood_size",
+        "golemrace:wood_health",
+		"golemrace:wood_health2",
+		"golemrace:wood_health3",
+		"golemrace:wood_health4",
+		"golemrace:photosynthesis",
+		"golemrace:nodigest",
+		"golemrace:foodisfuel",
+        "golemrace:saturation",
+        "golemrace:fire_damage",
+        "golemrace:fire_vulnerability",
+        "golemrace:charring",
+        "golemrace:charsource"
+    ],
+    "icon": "minecraft:oak_log",
+    "order": 1,
+    "impact": 1,
+    "name": "Wood Golem",
+    "description": "You have awakened from a deep slumber. Your magical body is failing, but there is still hope for recovery.",
+    "upgrades": [
+        {
+            "condition": "golemrace:charred_golem",
+            "origin": "golemrace:cinder",
+            "announcement": "Your soul has been burnt."
+        }
+    ]
+}

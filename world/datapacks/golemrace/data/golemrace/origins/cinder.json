@@ -1,0 +1,13 @@
+{
+    "powers": [
+        "golemrace:cinder_size",
+		"golemrace:nodigest",
+		"golemrace:foodisfuel"
+    ],
+    "icon": "minecraft:coal_block",
+    "order": 1,
+    "impact": 2,
+    "unchoosable": true,
+    "name": "Cindered Golem",
+    "description": "You have awakened from a deep slumber. Your burnt body has taken away your naturalistic powers and you are filled with rage that fuels your burning body."
+}

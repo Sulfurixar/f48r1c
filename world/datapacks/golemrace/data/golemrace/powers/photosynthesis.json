@@ -1,0 +1,57 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 1,
+    "effects": [
+		{
+			"effect": "minecraft:regeneration",
+			"duration": 100,
+			"amplifier": 0,
+			"is_ambient": false,
+			"show_particles": false,
+			"show_icon": true
+		},
+		{
+			"effect": "minecraft:saturation",
+			"duration": 100,
+			"amplifier": 0,
+			"is_ambient": false,
+			"show_particles": false,
+			"show_icon": false
+		}
+	],
+    "condition": {
+		"type": "origins:and",
+		"conditions": [ 
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:grass_block"
+				},
+				"radius": 3,
+				"shape": "cube",
+				"compare_to": 5
+			},
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:water"
+				},
+				"radius": 5,
+				"shape": "cube",
+				"compare_to": 3
+			},
+			{
+				"type": "origins:sneaking"
+			},
+			{
+				"type": "origins:exposed_to_sun"
+			}
+		]
+    },
+	"name": "Photosynthesis",
+	"description": "Part of your body is still living material. Much like the trees outside, you can extract nutrients from the soil and energy from the air and sunlight around you."
+}

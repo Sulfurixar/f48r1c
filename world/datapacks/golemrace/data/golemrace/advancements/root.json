@@ -1,0 +1,34 @@
+{
+    "display": {
+        "title": {
+            "text": "Golemified",
+            "color": "dark_purple",
+            "bold": true,
+            "italic": false,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "You have become a golem!",
+            "color": "gold",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:iron_block"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "golemrace": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "golemrace"
+        ]
+    ]
+}

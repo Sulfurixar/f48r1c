@@ -1,0 +1,33 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "execute at @s run function golemrace:wood",
+        "permission_level": 4
+    },
+    "entity_action_respawn": {
+        "type": "origins:execute_command",
+        "command": "execute at @s run function golemrace:wood",
+        "permission_level": 4
+    },
+    "entity_action_removed": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:origin",
+			"origin": "golemrace:cinder",
+			"inverted": true
+		},
+		"if_action": {
+			"type": "origins:execute_command",
+			"command": "execute at @s run function golemrace:golemrem",
+			"permission_level": 4
+		},
+		"else_action": {
+			"type": "origins:execute_command",
+			"command": "execute at @s run function golemrace:cinder",
+			"permission_level": 4
+		}
+	},
+    "hidden": true,
+    "execute_chosen_when_orb": true
+  }

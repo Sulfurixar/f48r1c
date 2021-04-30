@@ -1,0 +1,25 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 100,
+    "start_value": 0,
+    "hud_render": {
+        "bar_index": 0,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_fire"
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "minecraft:soul_fire"
+                    }
+                }
+            ]
+        }
+    },
+	"hidden": true
+}

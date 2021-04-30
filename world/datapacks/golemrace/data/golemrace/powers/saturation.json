@@ -1,0 +1,39 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effects": [
+        {
+            "effect": "minecraft:resistance",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:fire_resistance",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:speed",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ],
+    "condition": {
+        "type": "origins:saturation_level",
+        "comparison": ">=",
+        "compare_to": 0
+    },
+    "name": "Satiated Nutrients",
+    "description": "When your nutrition is top-notch and you have a full supply of water, you feel more resistant to fire, over-all bruising and more agile."
+}

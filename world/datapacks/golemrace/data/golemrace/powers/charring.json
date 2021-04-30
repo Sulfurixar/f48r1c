@@ -1,0 +1,50 @@
+{
+    "type": "origins:action_over_time" ,
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:on_fire"
+                    },
+                    {
+                        "type": "origins:in_block",
+                        "block_condition": {
+                            "type": "origins:block",
+                            "block": "minecraft:soul_fire"
+                        }
+                    }
+                ]
+        },
+        "if_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "golemrace:charsource",
+				"comparison": ">=",
+				"compare_to": 100
+			},
+			"if_action": {
+				"type": "origins:execute_command",
+				"command": "advancement grant @s until minecraft:golemrace/charred_golem"
+			},
+			"else_action": {
+				"type": "origins:chance",
+				"action": {
+					"type": "origins:change_resource",
+					"resource": "golemrace:charsource",
+					"change": 1
+				},
+				"chance": 0.33
+			}
+        },
+        "else_action": {
+            "type": "origins:change_resource",
+            "resource": "golemrace:charsource",
+            "change": -1
+        }
+    },
+    "interval": 10,
+    "hidden": true
+}
