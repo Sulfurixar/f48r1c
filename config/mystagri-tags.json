@@ -1,0 +1,15 @@
+{
+  "Instructions": "This file is a simple list of key-value pairs. The key being the tag and the value being the item that recipes using that tag should output. This file will automatically populate with any tags used by this system during recipe loading. If there is no entry for a tag, or the output item is \"null\", an entry will attempt to be added for one of the items in that tag. There should be no need to add an entry manually. Once you load into a world, all applicable entries should be generated. You can then change the item ids to the ones you want to use.",
+  "c:electrum_ingots": "modern_industrialization:electrum_ingot",
+  "c:tin_ingots": "bno:tin_ingot",
+  "c:aluminum_ingots": "bno:aluminum_ingot",
+  "c:bronze_ingots": "modern_industrialization:bronze_ingot",
+  "c:invar_ingots": "modern_industrialization:invar_ingot",
+  "c:chrome_ingots": "modern_industrialization:chrome_ingot",
+  "c:copper_ingots": "bno:copper_ingot",
+  "c:nickel_ingots": "bno:nickel_ingot",
+  "c:titanium_ingots": "modern_industrialization:titanium_ingot",
+  "c:lead_ingots": "bno:lead_ingot",
+  "c:steel_ingots": "modern_industrialization:steel_ingot",
+  "c:silver_ingots": "bewitchment:silver_ingot"
+}
